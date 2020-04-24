@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eventtime
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?
+    username:  ${LOCALDBUSER}
+    password: ${LOCALDBPASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
